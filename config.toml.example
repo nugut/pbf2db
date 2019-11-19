@@ -1,0 +1,9 @@
+[main]
+# all parameters must be set
+pbf_source = "/var/osm/planet/data.osm.pbf" # source to osm pbf file
+pg_connection_url = "postgres://postgres:postgres@%2Fvar%2Frun%2Fpostgresql/osm_source" # connection URL to Postgres
+number_of_sql_workers = 12 # number of SQL workers for data save
+flush_count = 75000 # buffer size for SQL insert operations
+redis_connection_url = "redis+unix:/var/run/redis/redis.sock" # or "redis://127.0.0.1/" as example 
+redis_flush_all = true # flush Redis database before using
+use_memory_for_derived_ids = true

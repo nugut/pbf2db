@@ -1,0 +1,15 @@
+[package]
+name = "pbf2osmsource"
+version = "0.1.0"
+authors = ["mootal"]
+
+[dependencies]
+postgres = "0.15"
+osmpbfreader = "*"
+nix = "*"
+toml = "0.4.2"
+serde = "1.0"
+serde_derive = "*"
+getopts = "0.2"
+redis = "*"
+chrono = "*"
